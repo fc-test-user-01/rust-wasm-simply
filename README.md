@@ -1,10 +1,6 @@
 ```
-docker build -t rust:sandbox .
-```
-
-```
 docker run -it --rm \
   -v $(pwd)/dist:/dist \
-  --name rust-sandbox rust:sandbox \
+  rai0kb/rust-wasm-simply \
   cp -r /workspace/dist /
 ```
