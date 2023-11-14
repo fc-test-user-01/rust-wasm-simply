@@ -10,7 +10,7 @@ Or
 ```
 docker run -it --rm \
   -v $(pwd)/dist:/dist \
-  -v $(pwd)/src/main.rs:/workspace/src/main.rs \
+  -v $(pwd)/src/main.rs:/workspace/test-wasm/src/main.rs \
   -v $(pwd)/src/index.html:/workspace/dist/index.html \
   rai0kb/rust-wasm-simply \
   /bin/bash -c \
